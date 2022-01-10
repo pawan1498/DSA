@@ -1,0 +1,5 @@
+Arithmatic Right shift divides by two. 
+
+Logical shift 
+- we shift the bit and put 0 in the most significant bit.
+- it is indicated with a >>> operator  

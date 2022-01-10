@@ -1,0 +1,1 @@
+{"name":"Local: Vector_Sort","url":"/home/pawan-s/Documents/codechef/c++/stl/Vector_Sort.cpp","tests":[{"id":1632249297303,"input":"5\n1 6 10 8 4","output":"1 4 6 8 10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/pawan-s/Documents/codechef/c++/stl/Vector_Sort.cpp","group":"local","local":true}
