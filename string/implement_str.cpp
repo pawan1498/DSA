@@ -1,33 +1,47 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 int strstr(string s, string x)
 {
-     for (int  i = 0; i < s.size(); i++)
-     {
-         int count = 0 ; 
-         for (int j = i; j < x.size()+i; j++)
-         {
-             if( s[j] == x[j])
-             count++;
-         }
-        //  cout << count << i<< endl ;
-        //  cout << "xs=" << x.size();
-         if( count = x.size())
-         return 1 ; 
-         
-     }
-     return 0 ; 
-     
+
+    // cout << s << x;
+    int m = s.length();
+    int n = x.length();
+
+    // cout << " m n " << m << " n " << n ;
+    for (int i = 0; i <= m - n; i++)
+    {
+        int y = 0;
+        for (int j = 0; j < n; j++)
+        {
+            y = j;
+            if( i ==5 ){
+                cout <<  "-----" << x[j] << s[i+j] <<endl;
+            }
+            if (x[j] != s[i + j])
+                break;
+        }
+
+        cout << "y = " << y << "   "
+             << "i " << i << endl;
+        if (y == n-1)
+        {
+            return i;
+        }
+    }
+    // cout << i <<endl ;
+    return -1;
 }
 int main()
 {
-    int t ; cin >> t ; 
-    while(t--){
+    int t;
+    cin >> t;
+    while (t--)
+    {
 
-        string s ,x;
-        cin >> s >> x ;
-        cout << strstr(s,x); 
-        
+        string s, x;
+        cin >> s >> x;
+        // cout << s << "   " << x << "\n";
+        cout << strstr(s, x);
     }
     return 0;
 }
