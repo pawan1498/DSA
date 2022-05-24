@@ -46,14 +46,14 @@ int mit(Node *node)
 int sot(Node *node)
 {
     if (node == NULL)
-        return 0;
+            return 0;
 
     return sot(node->left) + sot(node->right) + 1;
 }
 
-// level order traversal
+// level order traversal start 
 
-void pcl(Node *node, int level)
+void pcl(Node *node, int level) //print current level 
 {
     if (node == NULL)
         return;
